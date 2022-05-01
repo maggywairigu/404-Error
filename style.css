@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 80%;
+    min-height: 100vh;
+    display: grid;
+    margin: auto;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+h1{
+    font-size: 100px;
+}
+p{
+    font-size: 40px;
+    font-weight: 300;
+}
+button{
+    background-color: rgb(211, 154, 154);
+    font-size: 15px;
+    border-radius: 15px;
+    border-style: groove;
+    width: 125px;
+    height: 35px;
+    margin-left: 35px;
+}
+button:hover{
+    background-color: rgb(233, 122, 122);
+}
+img{
+    animation: MoveUpDown 2s ease-in-out infinite  alternate-reverse both; 
+}
+@keyframes MoveUpDown{
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: rotateY(-10px);
+    }
+}
+@media (max-width: 990px){
+   .container{
+       display: block;
+      
+   }
+   img{
+      width: 350px;
+      height: 250px;
+   }
+}
